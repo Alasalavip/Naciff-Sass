@@ -24,6 +24,9 @@ a.footer {
     color: #565A63;
     margin: 10px;
 }
+.btn {
+    color: black;
+}
 /* vista movil*/
 @media only screen and (min-width:280px) and (max-width:991px) {
     main {
