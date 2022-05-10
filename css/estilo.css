@@ -24,7 +24,7 @@ a.footer {
     color: #565A63;
     margin: 10px;
 }
-
+/* vista movil*/
 @media only screen and (min-width:280px) and (max-width:991px) {
     main {
         height: 100vh;
@@ -35,6 +35,7 @@ a.footer {
          overflow-y: scroll;
          margin-bottom: 20px;
     }
+    /* el menu en forma de nav bar no se ve en la vista movil*/
     .noham {
         display: none;
     }
@@ -45,6 +46,7 @@ a.footer {
         flex-wrap: wrap;
         background-image: url(/imagenes/fondo.JPG);
     }
+    /*nosotros se divide en la parte izquierda y parte derecha con el texto*/
     .nleft {
         width: 100%;
         background-image: url(../imagenes/oficina.webp);
@@ -54,6 +56,7 @@ a.footer {
         flex-wrap: wrap;
         
     }
+    /*parte derecha*/
     .nright {
         width: 100%;
         padding: 5px; 
@@ -82,6 +85,7 @@ a.footer {
         border: 3px solid black  ;
         font-weight: 600;
     }
+    /* el link de mas info se oscurese*/
     .nright a:hover {
         background-color: darkgray;   
     }
@@ -97,7 +101,7 @@ a.footer {
         display: inline;
         max-height: 20px;
     }
-   
+   /* links del menu de navegacion*/
     .nav-link {
         font-size: 24px;
     }
@@ -128,6 +132,7 @@ a.footer {
         width: 1500px;
         margin-top: 20px;
     }
+    /*imagenes de las noticias*/
     .card-img-top {
         max-height: 400px;
     }
@@ -138,11 +143,13 @@ a.footer {
         display: none;
         margin-bottom: 20px;
     }
+    /*para vista mobil*/
     .mobil{
         max-width: 1500px;
         max-height: 1500px;
         margin: auto;
     }
+    /*formulario de contacto*/
     form.contacto {
         margin: auto;
         background-image: url(/imagenes/jeroglificos.jpg);
@@ -158,6 +165,7 @@ a.footer {
         flex-shrink: 50%;
         width: 100%;
     }
+    /*formulario iniciar sesion*/
     form.unirse {
         margin: auto;
         background-image: url(/imagenes/jeroglificos.jpg);
@@ -172,6 +180,7 @@ a.footer {
         text-decoration: none;
         color: white;
     }
+    /*formulario registrarse*/
     form.registrarse {
         margin: auto;
         background-image: url(/imagenes/jeroglificos.jpg);
@@ -184,6 +193,7 @@ a.footer {
     }
   
 }
+/*vista desktop*/
 @media only screen and (min-width:992px ){
 main {
    height: 100vh;
@@ -204,9 +214,11 @@ footer {
 .nav-link {
     font-size: 24px;
 }
+/* no se ve el menu hamburguesa en desktop*/
 .hamburguesa {
     display: none;
 }
+/* flecha para regresar al inicio de la pagina*/
 a.flecha {
     height: 40px;
     width: 40px;
@@ -237,12 +249,14 @@ margin: auto;
 .card-img-top {
     max-height: 400px;
 }
+/*tarjetas de los juegos*/
 .juegos {
     max-width: 1500px;
     max-height: 1450px;
     margin: auto;
     margin-top: 50px;
 }
+
 .mobil{
     display: none;
     max-width: 1500px;
