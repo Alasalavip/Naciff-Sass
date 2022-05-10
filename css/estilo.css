@@ -1,331 +1,141 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html {
-    min-height: 100%;
-    position: relative;
-    scroll-behavior: smooth;
-}
-body {  
-    margin: 0;
-    margin-bottom: 40px;
-}
-p.footer {
-    text-align: center;
-    font-size: 20px;
-}
-ul.footer {
-    text-align: center;
-    font-size: 40px;
-}
-a.footer {
-    color: #565A63;
-    margin: 10px;
-}
-.btn {
-    color: black;
-}
-/* vista movil*/
-@media only screen and (min-width:280px) and (max-width:991px) {
-    main {
-        height: 100vh;
-         background-image: url(../imagenes/fondo.JPG);
-         width: 100%;
-         background-size: cover;
-         display: flex; 
-         overflow-y: scroll;
-         margin-bottom: 20px;
-    }
-    /* el menu en forma de nav bar no se ve en la vista movil*/
-    .noham {
-        display: none;
-    }
-    .nosotros {
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        background-image: url(/imagenes/fondo.JPG);
-    }
-    /*nosotros se divide en la parte izquierda y parte derecha con el texto*/
-    .nleft {
-        width: 100%;
-        background-image: url(../imagenes/oficina.webp);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-    /*parte derecha*/
-    .nright {
-        width: 100%;
-        padding: 5px; 
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .nright p {
-        font-size: 15px;
-        margin-bottom: 0px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .nright h3 {
-        text-align: center;
-        padding-bottom: px;
-        text-transform: capitalize;
-    }
-    .nright a {
-        height: 50px;
-        background-color: white;
-        color: black;
-        padding: 10px 20px;
-        text-decoration: none;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        border-radius: 10px;
-        border: 3px solid black  ;
-        font-weight: 600;
-    }
-    /* el link de mas info se oscurese*/
-    .nright a:hover {
-        background-color: darkgray;   
-    }
-    footer {
-        left:0;
-        bottom:0;
-        height:60px;
-        width:100%;
-        background-size: cover;
 
-    }
-    .prueba {
-        display: inline;
-        max-height: 20px;
-    }
-   /* links del menu de navegacion*/
-    .nav-link {
-        font-size: 24px;
-    }
-    a.flecha {
-        height: 40px;
-        width: 40px;
-        background-color: white;
-        border: 3px solid black;
-        color: black;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        text-align: center;
-        line-height: 30px;
-        border-radius: 50%;
-    }
-    p.footer {
-        font-size: 30px;
-        font-weight: 600;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-right: 25px;
-    }
-    .slide {
-    margin: auto;
-    }
-    .noticias {
-        margin: auto; 
-        width: 1500px;
-        margin-top: 20px;
-    }
-    /*imagenes de las noticias*/
-    .card-img-top {
-        max-height: 400px;
-    }
-    .juegos {
-        max-width: 1500px;
-        max-height: 1500px;
-        margin: auto;
-        display: none;
-        margin-bottom: 20px;
-    }
-    /*para vista mobil*/
-    .mobil{
-        max-width: 1500px;
-        max-height: 1500px;
-        margin: auto;
-    }
-    /*formulario de contacto*/
-    form.contacto {
-        margin: auto;
-        background-image: url(/imagenes/jeroglificos.jpg);
-        padding: 20px;
-        font-weight: 600;
-        color: white;
-        border-radius: 1%;
-        width:500px;
-    }
-    textarea.contacto {
-        display: flex;
-        flex-wrap: wrap;
-        flex-shrink: 50%;
-        width: 100%;
-    }
-    /*formulario iniciar sesion*/
-    form.unirse {
-        margin: auto;
-        background-image: url(/imagenes/jeroglificos.jpg);
-        padding: 20px;
-        font-weight: 600;
-        color: white;
-        border-radius: 1%;
-        height: 350px;
-        width: 600px;
-    }
-    .linkr {
-        text-decoration: none;
-        color: white;
-    }
-    /*formulario registrarse*/
-    form.registrarse {
-        margin: auto;
-        background-image: url(/imagenes/jeroglificos.jpg);
-        padding: 20px;
-        font-weight: 600;
-        color: white;
-        border-radius: 1%;
-        height: 550px;
-        width: 600px;  
-    }
-  
+html {
+  min-height: 100%;
+  position: relative;
+  scroll-behavior: smooth;
 }
-/*vista desktop*/
-@media only screen and (min-width:992px ){
-main {
-   height: 100vh;
-    background-image: url(../imagenes/fondo.JPG);
-    width: 100%;
-    background-size: cover;
-    display: flex; 
-    overflow-y: scroll;
+
+body {
+  margin: 0;
+  margin-bottom: 40px;
 }
+
 footer {
-    left:0;
-    bottom:0;
-    height:60px;
-    width:100%;
-    background-size: cover;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-size: cover;
+  margin-right: 25px;
+}
+footer p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer ul {
+  text-align: center;
+  font-size: 40px;
+}
+footer a {
+  color: #565A63;
+  margin: 10px;
+}
+
+main {
+  height: 100vh;
+  background-image: url(/imagenes/fondo.JPG);
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.flecha {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
 }
 
 .nav-link {
-    font-size: 24px;
-}
-/* no se ve el menu hamburguesa en desktop*/
-.hamburguesa {
-    display: none;
-}
-/* flecha para regresar al inicio de la pagina*/
-a.flecha {
-    height: 40px;
-    width: 40px;
-    background-color: white;
-    border: 3px solid black;
-    color: black;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-}
-p.footer {
-    font-size: 30px;
-    font-weight: 600;
-    margin-right: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.slide {
-margin: auto;
-}
-.noticias {
-    margin: auto; 
-    width: 1500px;
-    margin-top: 20px;
-}
-.card-img-top {
-    max-height: 400px;
-}
-/*tarjetas de los juegos*/
-.juegos {
-    max-width: 1500px;
-    max-height: 1450px;
-    margin: auto;
-    margin-top: 50px;
+  font-size: 24px;
 }
 
-.mobil{
+.slide {
+  margin: auto;
+}
+
+.noticias {
+  margin: auto;
+  width: 1500px;
+  margin-top: 20px;
+}
+.noticias .card-img-top {
+  max-height: 400px;
+}
+
+form {
+  margin: auto;
+  background-image: url(/imagenes/jeroglificos.jpg);
+  padding: 20px;
+  font-weight: 600;
+  color: white;
+  border-radius: 1%;
+  min-width: 380px;
+}
+form textarea {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 50%;
+  width: 100%;
+}
+form a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 991px) {
+  .noham {
     display: none;
-    max-width: 1500px;
-    max-height: 1500px;
-    margin: auto;
-}
-form.contacto {
-    margin: auto;
-    background-image: url(/imagenes/jeroglificos.jpg);
-    padding: 20px;
-    font-weight: 600;
-    color: white;
-    border-radius: 1%;
-}
-form.unirse {
-    margin: auto;
-    background-image: url(/imagenes/jeroglificos.jpg);
-    padding: 20px;
-    font-weight: 600;
-    color: white;
-    border-radius: 1%;
-    height: 350px;
-    width: 600px;
-}
-.linkr {
-    text-decoration: none;
-    color: white;
-}
-form.registrarse {
-    margin: auto;
-    background-image: url(/imagenes/jeroglificos.jpg);
-    padding: 20px;
-    font-weight: 600;
-    color: white;
-    border-radius: 1%;
-    height: 550px;
-    width: 600px;  
-}
-.nosotros {
-    height: 600px;
+  }
+
+  .nosotros {
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
-}
-.nleft {
-    width: 50%;
-    background-image: url(../imagenes/oficina.webp);
+    background-image: url(/imagenes/fondo.JPG);
+  }
+  .nosotros .nleft {
+    width: 100%;
+    background-image: url(/imagenes/oficina.webp);
     background-size: cover;
     background-position: center;
-    
-}
-.nright {
-    width: 50%;
-    padding: 20px; 
-}
-.nright p {
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-.nright h3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nosotros .nright {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nosotros .nright p {
+    font-size: 15px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .nosotros .nright h3 {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     text-transform: capitalize;
-}
-.nright a {
+  }
+  .nosotros .nright a {
     height: 50px;
     background-color: white;
     color: black;
@@ -333,11 +143,83 @@ form.registrarse {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 10px;
-    border: 3px solid black  ;
+    border: 3px solid black;
     font-weight: 600;
+  }
+  .nosotros .nright a:hover {
+    background-color: darkgray;
+  }
+
+  .juegos {
+    display: none;
+  }
+
+  .mobil {
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: auto;
+  }
 }
-.nright a:hover {
-    background-color: darkgray;   
+@media only screen and (min-width: 992px) {
+  .hamburguesa {
+    display: none;
+  }
+
+  .juegos {
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .mobil {
+    display: none;
+  }
+
+  form {
+    min-width: 600px;
+  }
+
+  .nosotros {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .nosotros .nleft {
+    width: 50%;
+    background-image: url(/imagenes/oficina.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .nosotros .nright {
+    width: 50%;
+    padding: 20px;
+  }
+  .nosotros .nright p {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .nosotros .nright h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .nosotros .nright a {
+    height: 50px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-weight: 600;
+  }
+  .nosotros .nright a:hover {
+    background-color: darkgray;
+  }
 }
 
-}
+/*# sourceMappingURL=estilo.css.map */
